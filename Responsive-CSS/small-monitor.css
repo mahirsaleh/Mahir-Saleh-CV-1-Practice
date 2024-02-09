@@ -1,0 +1,10 @@
+        /* Navigation Bar */
+.mid-side__name {
+    margin-left: 200px;
+}      /* Navigation Bar */
+
+        /* Circular Bar Start's Here */
+.main__circle-div {
+    gap: 15px;
+    padding: 20px 10px;
+}       /* Circular BarEnd's Here */

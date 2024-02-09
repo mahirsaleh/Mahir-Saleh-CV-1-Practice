@@ -1,0 +1,35 @@
+        /* Navigation Bar */
+.mid-side__name {
+    margin-left: 100px;
+}
+
+.right-side__link-section {
+    justify-content: space-between;
+}
+
+.nav-1__right-side {
+    width: 550px;
+}     /* Navigation Bar */
+      /* Islamic Content */
+.content__section {
+    grid-template-columns: 1fr 1fr 1fr;
+}    /* Islamic Content */
+    /* My Bio Data */
+.inform__list li::after {
+    width: 110%;
+    left: -5%;
+}   /* My Bio Data */
+    /* Circular Bar Start's Here */
+.main__circle-div {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}    /* Circular Bar End's Here */
+    /* Form Start's Here */
+.main__contact {
+    padding: 100px;
+}
+
+.contact__layer {
+    width: 80%;
+}    /* Form End's Here */
+               

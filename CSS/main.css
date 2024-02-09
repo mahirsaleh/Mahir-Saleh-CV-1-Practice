@@ -1,0 +1,972 @@
+.top-button {
+    position: fixed;
+    right: 2%;
+    bottom: 8%;
+    z-index: 1000000;
+}
+
+.top-button a {
+    color: white;
+    background: lightsalmon;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 25px;
+    padding: 8px 11px;
+    cursor: pointer;
+    transition: 0.15s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.top-button a:hover {
+    background: darksalmon;
+}
+
+.arrow {
+    transition: 0.2s linear;
+}
+
+.top-button a:hover .arrow {
+    transform: translateY(-5px);
+}
+
+/* Intro Starts Here */
+.main__intro {
+    background: linear-gradient(120deg, lightblue, lightpink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 60px;
+    padding: 80px 15px;
+    font-family: 'Lobster', sans-serif;
+    height: calc(100svh - 100px);
+}
+
+.intro__name {
+    margin: 40px 0px; 
+    font-size: 100px;
+    cursor: all-scroll;
+    user-select: none;
+    font-weight: 700;
+    background: linear-gradient(135deg, cyan , violet ,darkorange);
+    background-repeat: no-repeat;
+    background-position-x: -488px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-stroke: 0.1px black;
+    animation: mahir linear 2s infinite;
+}
+
+@keyframes mahir {
+    0% , 10% , 97% , 100% {
+        background-position-x: -488px;
+    } 
+
+    25% {
+        background-position-x: -200px;
+    }
+
+    35% {
+        background-position-x: -100px;
+    } 
+
+    50% , 90% {
+        background-position-x: 0px;
+    }
+
+    96% {
+        background-position-x: -150px;
+    }
+}
+
+@media (max-width: 1099px) and (min-width: 768px) {
+    .main__intro {
+        font-size: 45px;
+    }
+}
+/* Intro End's Here */
+
+/* Islamic Content Start's Here */
+.main__content {
+    background: tan;
+    padding: 35px;
+}
+
+.main__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.video__link {
+    text-decoration: none;
+    position: relative;
+}
+
+.link__title {
+    position: absolute;
+    background: hsla(163, 79%, 39%, 0.8);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    bottom: 2px;
+    color: black;
+    transition: 0.30s;
+}
+.link__image:hover ~ .link__title,
+.link__title:hover {
+    background: rgba(0, 206, 209, 0.8);
+}
+
+.link__title:active {
+    background:rgba(0, 136, 209, 0.8);
+}
+
+.link__image {
+    width: 100%;
+}
+
+.content__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 25px 20px;
+}
+    /* Islamic Content End's Here */
+    /* About Me Start's Here */
+.main__about {
+    background: lightseagreen;
+    padding: 35px;
+}
+
+.about__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.a-section__img {
+    display:flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.bg-img {
+    height: 350px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(../Image/Mahir.jpg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size: 460px;
+}
+
+.bg-img__frame {
+    width: 600px;
+    animation: frame 16s linear infinite;
+}
+
+@keyframes frame {
+    0% {
+        transform: rotatez(0deg);
+    }
+
+    100% {
+        transform: rotatez(360deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 870px) {
+    .bg-img {
+        width: 320px;
+        height: 320px;
+        background-size: 410px;
+    }
+            
+    .bg-img__frame {
+        width: 500px;
+    }
+}
+
+.info__data-div div {
+    font-size: 33px;
+    margin: 30px 0px;
+    text-align: justify;
+}
+
+.identity__list li {
+    list-style-type: none;
+    border-top: 2px solid white;
+    padding: 30px 0px;
+    font-family: arial, sans-serif;
+    font-size: 27px;
+}
+
+.identity__list li:last-child {
+    border-bottom: 2px solid white;
+    margin-bottom: 60px;
+}
+
+.identity__cv {
+    display: grid;
+    place-items: center;
+}
+
+.identity__cv a {
+    font-size: 25px;
+    font-family: 'Lobster', sans-serif;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.identity__cv a:hover {
+    background: turquoise;
+    color: black;
+    border: 3px solid darkred;
+}
+
+.identity__cv a:active {
+    background: green;
+    color: white;
+    border: 3px solid gold;
+}
+    /* About Me End's Here */
+    /* Big Image Start's Here */
+.main__big-img {
+    background-image: url(../Image/saleh.jpg);
+    background-position: 50% 20%;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100svh;
+}   /* Big Image End's Here */
+    /* Information Start's Here */
+.main__inform {
+    background: turquoise;
+    padding: 20px;
+}
+
+.inform__inform-div {
+   display: grid;
+   grid-template-areas: "div-1 div-2 div-3";
+   gap: 20px;
+}
+
+.inform__work-div { grid-area: div-1; }
+.inform__edu-div { grid-area: div-2; }
+.inform__skill-div { grid-area: div-3; }
+
+.border {
+    display: grid;
+    place-items: center;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.animate {
+    display: grid;
+    place-items: center;
+    position: relative;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.animate::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, red, blue);
+    width: 205%;
+    height: 30%;
+    animation: animate-1 4s linear infinite;
+}
+
+.animate::after {
+    content: '';
+    position: absolute;
+    background: linear-gradient(90deg, yellow, green);
+    width: 205%;
+    height: 30%;
+    animation: animate-2 4s linear infinite;
+    transform: rotatez(90deg);
+}
+
+@keyframes animate-1 {
+    100% {
+        transform: rotatez(360deg);
+    }
+}
+
+@keyframes animate-2 {
+    100% {
+        transform: rotatez(450deg);
+    }
+}
+
+.work-div__work {
+    background: lightgray;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    margin: 20px;
+}
+
+.inform__img {
+    width: 50px;
+}
+
+.inform__img-div {
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 50%;
+}
+
+.inform__name {
+    background: gray;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    font-family: 'Lobster', sans-serif;
+}
+
+.inform__list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inform__list li {
+    font-size: 30px;
+    font-weight: bold;
+    list-style-position: inside;
+    margin: 25px 0;
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.inform__list li::after {
+    content: '';
+    position: absolute;
+    background: black;
+    height: 2px;
+    width: 140%;
+    left: -20%;
+    bottom: 0;
+}
+
+.inform__list li p {
+    font-weight: 100;
+}
+
+.skill__list {
+    width: 100%;
+    padding: 20px;
+}
+
+.skill__list li {
+    font-size: 30px;
+    font-weight: bold;
+    list-style-position: inside;
+    position: relative;
+    margin-bottom: 75px;
+    padding-bottom: 15px;
+}
+
+.skill__list li:nth-child(3) {
+    margin-bottom: 45px;
+}
+
+.skill__list li::before {
+    content: '';
+    position: absolute;
+    width: 90%;
+    background: gray;
+    height: 20px;
+    left: 10px;
+    top: 100%;
+    border-radius: 100px;
+    border: 3px solid black;
+}
+
+.skill__list li::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    background: lightskyblue;
+    height: 20px;
+    left: 13px;
+    top: calc(100% + 3px);
+    border-radius: 100px;
+}
+
+.skill__list li:nth-child(1)::after {
+    animation: photo 2.5s linear infinite;
+}
+
+.skill__list li:nth-child(2)::after {
+    animation: video 2.5s linear infinite;
+}
+
+.skill__list li:nth-child(3)::after {
+    animation: office 2.5s linear infinite;
+}
+ 
+@keyframes photo {
+    100% {
+        width: 60%;
+    }
+}
+ 
+@keyframes video {
+    100% {
+        width: 50%;
+    }
+}
+ 
+@keyframes office {
+    100% {
+        width: 40%;
+    }
+}
+ 
+.skill__list li span {
+    position: absolute;
+    top: calc(100% + 30px);
+    z-index: 100;
+    background: teal;
+    color: white;
+    padding: 6px;
+    font-size: 20px;
+    font-weight: 100;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.skill__list li:nth-child(1) span {
+    animation: photo-70 2.5s linear infinite;
+}
+
+.skill__list li:nth-child(2) span {
+    animation: video-60 2.5s linear infinite;
+}
+
+.skill__list li:nth-child(3) span {
+    animation: office-50 2.5s linear infinite;
+}
+
+@keyframes photo-70 {
+    0% {
+        left: -2%;
+    }
+
+    100% {
+        left: 58%;
+    }
+}
+
+@keyframes video-60 {
+    0% {
+        left: -2%;
+    }
+
+    100% {
+        left: 48%;
+    }
+}
+
+@keyframes office-50 {
+    0% {
+        left: -2%;
+    }
+
+    100% {
+        left: 38%;
+    }
+}
+
+.skill__list li span::before {
+    content: '';
+    position: absolute;
+    padding: 8px;
+    background: teal;
+    transform: rotateZ(45deg);
+    top: -10.5px;
+    left: 12.5px;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+}   /* Information End's Here */
+    /* Circular Bar Start's Here */
+.main__circle-div {
+    background: rgb(216, 255, 216);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 35px;
+}
+
+.circle-div__circle {
+    background: #E6BF83;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.circle-div__circle svg {
+    height: 400px;
+    width: 400px;
+    transform: rotatez(270deg);
+}
+ 
+.circle__svg-border {
+    fill: transparent;
+    stroke: paleturquoise;
+    stroke-width: 30;
+}
+ 
+.circle__svg-inner {
+    fill: transparent;
+    stroke: darkslategray;
+    stroke-width: 18;
+}
+ 
+.circle__svg-line {
+    fill: transparent;
+    stroke: #00CED1;
+    stroke-width: 18;
+    stroke-dasharray: 1005.312;
+    stroke-dashoffset: 1005.312;
+    stroke-linecap: round;
+}
+
+/* line Animation Start's Here */
+
+.circle__svg-html {
+    animation: line-html 4s linear infinite;
+}
+@keyframes line-html {
+    100% {
+        stroke-dashoffset: 201.0624;
+    }
+}
+
+.circle__svg-css {
+    animation: line-css 4s linear infinite;
+}
+@keyframes line-css {
+    100% {
+        stroke-dashoffset: 301.5936;
+    }
+}
+
+.circle__svg-bt {
+    animation: line-bt 4s linear infinite;
+}
+@keyframes line-bt {
+    100% {
+        stroke-dashoffset: 502.656;
+    }
+}
+
+.circle__svg-js {
+    animation: line-js 4s linear infinite;
+}
+@keyframes line-js {
+    100% {
+        stroke-dashoffset: 703.7184;
+    }
+}
+    /* line Animation End's Here */
+
+.circle__text {
+    position: absolute;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text__name {
+    font-family: Lobster, sans-serif;
+}
+
+.circle__point {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+}
+
+/* Point Animation Start's Here */
+.circle__point-html {
+    animation: point-html 4s linear infinite;
+}
+@keyframes point-html {
+    100% {
+        transform: rotatez(288deg);
+    }
+}
+
+.circle__point-css {
+    animation: point-css 4s linear infinite;
+}
+@keyframes point-css {
+    100% {
+        transform: rotatez(252deg);
+    }
+}
+
+.circle__point-bt {
+    animation: point-bt 4s linear infinite;
+}
+@keyframes point-bt {
+    100% {
+        transform: rotatez(180deg);
+    }
+}
+
+.circle__point-js {
+    animation: point-js 4s linear infinite;
+}
+@keyframes point-js {
+    100% {
+        transform: rotatez(108deg);
+    }
+}
+/* Point Animation End's Here */
+
+.circle__point::before {
+    content: '';
+    position: absolute;
+    background: #00CED1;
+    padding: 9px;
+    border-radius: 50%;
+    left: 45.5%;
+    top: -34.5%;
+    box-shadow: 0 0 30px 15px #00CED1;
+}
+
+.text__name-bt ,
+.text__name-js {
+    font-size: 40px;
+}   /* Circular Bar End's Here */
+    /* Contact Start's Here */
+.main__contact {
+    padding: 150px;
+    display: grid;
+    place-items: center;
+    background: url(../Image/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-attachment: fixed; 
+}
+
+.contact__layer {
+    background: rgba(0, 128, 128, 0.5);
+    padding: 50px;
+    width: 70%;
+    padding-bottom: 35px;
+}
+
+.layer__div {
+    font-size: 30px;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 35px 0;
+    align-items: center;
+}
+
+.document__colon , .gender {
+    pointer-events: none;
+}
+
+.document__input {
+    display: none;
+}
+
+.document__input-div {
+    background: green;
+    display: flex;
+}
+
+.document__label {
+    background: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    border: 3px solid black;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+.document__label:hover {
+    border-color: tomato;
+}
+
+.colon {
+    position: relative;
+}
+
+.colon::after {
+    content: ':';
+    position: absolute;
+    right: 35%;
+    font-size: 35px;
+    bottom: -11%;
+    color: lightcyan;
+}
+
+.input-text {
+    padding: 7px;
+    font-size: 20px;
+}
+
+.p-holder::placeholder , .selector ,
+.document__label {
+    font-family: Lobster, Arial, sans-serif;
+    color: teal;
+    text-align: center;
+    font-size: 22px;
+}
+
+.selector {
+    cursor: pointer;
+    font-size: 25px;
+}
+
+.input-text , .selector {
+    border: 3px solid black;
+    transition: 0.3s linear;
+}
+
+.input-text:focus , .selector:focus {
+    border-color: rgb(197, 63, 0);
+    outline: none;
+}
+
+.radio {
+    font-family: Lobster, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.radio__check {
+    cursor: pointer;
+    position: relative;
+}
+
+.radio__check input , .checkmark {
+    position: absolute;
+    bottom: 4px;
+    left: -30px;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+}
+
+.checkmark {
+    border-radius: 50%;
+    background: white;
+    border: 4px solid teal;
+    transition: 0.15s linear;
+    outline: 2px solid white;
+}
+
+.radio__check:hover .checkmark  {
+    background: darkgray;
+    border-color: cyan;
+    outline-color: black;
+}
+
+.radio__check input:checked ~ .checkmark {
+    background: tomato;
+    outline: 2px solid tomato;
+    border-color: white;
+}
+
+.layer__text-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.layer__text-area label {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.text-area__colon::before {
+    content: ':';
+    position: absolute;
+    right: 67.5%;
+    font-size: 35px;
+    bottom: -11%;
+    color: lightcyan;
+}
+
+.text-area__text {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+textarea {
+    resize: none;
+    border: 3px solid black;
+    border-radius: 5px;
+    transition: 0.5s linear;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Sans-serif;
+    font-size: 20px;
+    width: 50%;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: tomato;
+}
+
+.layer__button {
+    margin-top: 80px;
+}
+
+.button__form {
+    font-size: 18px;
+    padding: 10px 0px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.button__submit {
+    background: green;
+    border: 2px solid black;
+}
+
+.button__submit:hover {
+    background: lightgreen;
+    color: black;
+}
+
+.button__reset:hover {
+    background: rgb(255, 148, 148);
+    color: black;
+}
+
+.button__reset {
+    background: red;
+    border: 2px solid black;
+}   /* Contact End's Here */
+   /* Last Start's Here */
+.main__last {
+    background:rgb(133, 30, 62);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 0;
+}
+
+.last__achieve {
+    display: grid;
+    place-items: center;
+}
+
+.achieve__header p {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.achieve__body {
+    font-size: 30px;
+    color: white;
+    text-transform: capitalize;
+}
+
+.icon-div__head {
+    font-size: 36px;
+    font-weight: bold;
+    color: white;
+}
+
+.last__icon-button {
+    display: grid;
+    place-items: center;
+}
+
+.icon-div__buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.icon-div__buttons a {
+    font-size: 40px;
+    background: lightgray;
+    padding: 10px 13px;
+    border-radius: 50%;
+    border: 3px solid black;
+    transition: 0.15s linear;
+    outline: 2px solid lightgray;
+    display: grid;
+    place-items: center;
+}
+
+.icon-div__buttons a:hover {
+    background: gray;
+}
+
+.icon-div__buttons a:active {
+    background: darkgray;
+}
+
+.fb-text {
+    color: darkblue;
+}
+
+.phone-text {
+    color: green;
+}
+
+.mail-text {
+    color: orangered;
+}
+
+.github-text {
+    color: black;
+}   /* List End's Here */

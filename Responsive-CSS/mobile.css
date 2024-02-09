@@ -1,0 +1,159 @@
+    /* Header End's Here */
+.nav-1__left-side {
+    width: 120px;
+}
+
+.checkbox {
+    margin-right: -30px;
+}
+
+.mid-side__name {
+    margin-left: -70px;
+}
+    /* Header End's Here */
+
+    /* Main Start's Here */
+
+    /* TOP Button Start's Here */
+.top-button {
+    right: 12px;
+    bottom: 20px;
+}
+    
+.top-button a {
+    font-size: 20px;
+    padding: 8px 10px;
+}
+    /* TOP Button End's Here */
+    /* Intro Start's Here */
+.main__intro {
+    font-size: 35px;
+}
+
+.intro__name {
+    font-size: 90px;
+}
+    /* Main Intro End's Here */
+
+                   /* Islamic Content */
+.content__section {
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+
+.main__content {
+    padding: 20px;
+}
+               /* Islamic Content */
+               /* About Me */
+.bg-img {
+    height: 200px;
+    width: 200px;
+    background-size: 260px;
+}
+
+.bg-img__frame {
+    width: 330px;
+}
+               /* About Me */
+.identity__list li {
+    font-size: 26px;
+}
+
+.info__data div {
+    text-align: justify;
+    font-size: 28px;
+}  /* My Bio Data */
+
+.inform__inform-div {
+    grid-template-areas: "div-1" "div-2" "div-3";
+} 
+    /* Circular Bar Start's Here */
+.main__circle-div {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}    /* Circular Bar End's Here */
+    /* Form Start's Here */
+.main__contact {
+    padding: 0px;
+    background-position: 50% 20%;
+    background-attachment: fixed; 
+    background-size: 230%;
+}
+
+.contact__layer {
+    padding: 50px;
+}
+
+.layer__div {
+    grid-template-columns: 1fr;
+    margin-top: 50px;
+}
+
+.layer__button {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 100px;
+}
+
+.button__form {
+    width: 120px;
+}
+
+textarea {
+    width: 80%;
+}
+
+.colon {
+    margin-bottom: 10px;
+}
+
+.colon::after {
+    left: 140px;
+    top: -5px;
+}
+
+.layer__text-area {
+    margin-top: 50px;
+}
+
+.text-area__colon::before {
+    left: 240px;
+}
+
+.text-area__text {
+    margin-top: 0;
+}
+
+.colon-mobile-1::after {
+    left: 210px;
+}
+
+.colon-mobile-2::after {
+    left: 270px;
+} /* Form Start's End's Here */
+    /* List Start's Here */
+.icon-div__buttons a {
+    font-size: 30px;
+    padding: 7px 10px;
+}   /* List End's Here */
+
+.footer__curve-div {
+    height: 50px;
+}
+
+.footer__last-text p {
+    font-size: 20px;
+    text-align: left;
+}
+
+.footer__last-text {
+    padding: 80px 0; 
+}
+
+.all-right__text {
+    margin-left: 15px;
+}
+
+.power__mahir {
+    font-size: 25px;
+}

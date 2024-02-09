@@ -1,0 +1,85 @@
+.mid-side__name {
+    margin-left: -100px;
+}
+
+               /* Islamic Content */
+.content__section {
+    grid-template-columns: 1fr 1fr;
+}               /* Islamic Content */
+/* My Bio Data */
+.inform__inform-div {
+    grid-template-areas: "div-1 div-2" "div-3 div-3";
+} 
+
+@media (max-width: 800px) and (min-width: 766px) {
+    .inform__inform-div {
+        grid-template-areas: "div-1" "div-2" "div-3";
+    }   
+}
+
+.skill__list li:nth-child(1)::after {
+    animation: photo 4s linear infinite;
+}
+
+.skill__list li:nth-child(2)::after {
+    animation: video 4s linear infinite;
+}
+
+.skill__list li:nth-child(3)::after {
+    animation: office 4s linear infinite;
+}
+
+.skill__list li:nth-child(1) span {
+    animation: photo-70 4s linear infinite;
+}
+
+.skill__list li:nth-child(2) span {
+    animation: video-60 4s linear infinite;
+}
+
+.skill__list li:nth-child(3) span {
+    animation: office-50 4s linear infinite;
+} /* My Bio Data */
+        /* Circular Bar Start's Here */
+.main__circle-div {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}    
+
+@media (max-width: 900px) and (min-width: 768px) {
+    .main__circle-div {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+} /* Circular Bar End's Here */
+    /* Form Start's Here */
+.main__contact {
+    padding: 40px;
+    background-size: 200%;
+    background-position: 50% 20%;
+}
+
+.colon::after {
+    right: 25%;
+}
+
+.text-area__colon::before {
+    right: 62.5%;
+}
+
+@media (max-width: 950px) and (min-width: 766px) {
+    .main__contact {
+        padding: 20px;
+    }
+    .contact__layer {
+        padding: 20px;
+    }
+    .colon::after {
+        right: 15%;
+    }
+    
+    .text-area__colon::before {
+        right: 57.5%;
+    }
+}
+    /* Form End's Here */

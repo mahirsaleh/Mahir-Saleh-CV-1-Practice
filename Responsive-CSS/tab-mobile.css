@@ -1,0 +1,119 @@
+  /* Navigation Bar */
+.mid-side__name {
+    text-align: center;
+}
+
+.nav-1__mid-side {
+    width: 100%;
+}
+
+.checkbox {
+    background: hsl(0, 0%, 95%);
+    font-size: 20px;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: -25px;
+}
+
+.checkbox:hover {
+    background: hsl(0, 0%, 80%);
+}
+
+.checkbox:active {
+    background-color: hsl(0, 0%, 90%);
+}
+
+#checkbox:checked ~ .right-side__link-section {
+    margin-left: 0;
+    transition: 0.7s;
+}
+
+.right-side__link-section {
+    flex-direction: column;
+    background-color: lightseagreen;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 98px;
+    margin-left: 100%;
+    transition: 0.3s;
+}
+
+.nav-1__right-side {
+    width: 0;
+}
+
+.link-section__drop-menu {
+    margin: 20px 80px;
+    padding: 10px 0px;
+    background: darkmagenta;
+    border-radius: 5px;
+}
+
+.link-section__drop-menu:hover {
+    background: darkgoldenrod;
+    color: black;
+    cursor: pointer;
+}
+
+.drop-menu__div > a:hover {
+    background: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.drop-menu__drop-content {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+}
+
+.sub-drop-menu__sub-drop-content {
+    left: 60%;
+    width: 40%;
+    top: 100%;
+}
+
+.drop-menu__div > a {
+    white-space: nowrap;
+}
+        /* Navigation Bar */
+        /* About Me */
+.about__section {
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+    justify-content: center;
+}
+
+.a-section__img {
+    margin-bottom: 150px;
+}
+
+.identity__list li {
+    text-align: center;
+}    /* About Me */
+    /* My Bio Data */
+.inform__list li::after {
+    width: 100%;
+    left: 0;
+} /* My Bio Data */
+    /* Contact Start's Here */
+.contact__layer {
+    width: 100%;
+}  /* Contact End's Here */
+    /* Last Start's Here */
+.main__last {
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+}    
+
+.icon-div__buttons {
+    margin-top: 10px;
+}
+    /* Last End's Here */
